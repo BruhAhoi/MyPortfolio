@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const tagColors = {
   React: "bg-blue-500/10 text-blue-400 border-blue-500/20",
@@ -23,6 +24,7 @@ const projectIcons = {
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function ProjectThumbnail({ project, variant = "detail", isActive = false }) {
+  const [loaded, setLoaded] = useState(false);
   const fallbackLabel =
     projectIcons[project.name] ?? project.name.slice(0, 2).toUpperCase();
   const imageAlt =
@@ -33,11 +35,21 @@ function ProjectThumbnail({ project, variant = "detail", isActive = false }) {
   return (
     <div className="relative h-full w-full overflow-hidden">
       {project.thumbnail ? (
-        <img
-          src={project.thumbnail}
-          alt={imageAlt}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-        />
+        <>
+          {/* Skeleton hiện khi chưa load xong */}
+          {!loaded && (
+            <div className="absolute inset-0 bg-border animate-pulse" />
+          )}
+          <img
+            src={project.thumbnail}
+            alt={imageAlt}
+            loading="lazy"
+            decoding="async"
+            onLoad={() => setLoaded(true)}
+            className={`h-full w-full object-cover transition-all duration-500 group-hover:scale-105
+              ${loaded ? "opacity-100" : "opacity-0"}`}
+          />
+        </>
       ) : (
         <div
           className="flex h-full w-full flex-col items-center justify-center gap-3"
