@@ -3,7 +3,7 @@
 > Website CV cá nhân được xây dựng bằng React + TypeScript + Framer Motion.  
 > Bài test vòng 2 — Thực tập sinh Frontend | GENX PK STORY
 
-🔗 **Live Demo:** [https://your-deploy-url.vercel.app](https://your-deploy-url.vercel.app)  
+🔗 **Live Demo:** [https://bruhahoi.github.io/MyPortfolio/](https://bruhahoi.github.io/MyPortfolio/)  
 📁 **Source Code:** [https://github.com/BruhAhoi/MyPortfolio.git](https://github.com/BruhAhoi/MyPortfolio.git)
 
 ---
