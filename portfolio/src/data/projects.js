@@ -1,6 +1,6 @@
 import MochiThumbnail from "../assets/MochiThumbnail.jpg"
 import HybridThumbnail from "../assets/HybridThumbnail.jpg"
-import CollabSphereThumbnail from "../assets/CollabSphereThumbnail.jpg"
+import CollabSphereThumbnail from "../assets/CollabsphereThumbnail.jpg"
 
 export const projects = [
   {
