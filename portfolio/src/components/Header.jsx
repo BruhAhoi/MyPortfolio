@@ -50,7 +50,8 @@ export default function Header() {
                 role="menuitem"
                 end={path === "/"}
                 className={({ isActive }) =>
-                  `relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg ${
+                  `relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg 
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                     isActive
                       ? "text-accent-light"
                       : "text-muted hover:text-text"
@@ -135,7 +136,9 @@ export default function Header() {
                     end={path === "/"}
                     role="menuitem"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                      `block px-4 py-3 rounded-lg text-sm font-medium transition-colors
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent
+                      ${
                         isActive
                           ? "bg-accent-glow text-accent-light border border-accent/30"
                           : "text-muted hover:text-text hover:bg-border"
