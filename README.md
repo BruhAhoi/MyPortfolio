@@ -133,7 +133,7 @@ src/
 
 | Dark Mode | Light Mode |
 |---|---|
-| ![Dark](./screenshots/dark.png) | ![Light](./screenshots/light.png) |
+| ![Dark](./screenshots/dark.jpg) | ![Light](./screenshots/light.jpg) |
 
 ---
 

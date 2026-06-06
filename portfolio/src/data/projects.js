@@ -1,5 +1,6 @@
 import MochiThumbnail from "../assets/MochiThumbnail.jpg"
 import HybridThumbnail from "../assets/HybridThumbnail.jpg"
+import CollabSphereThumbnail from "../assets/CollabSphereThumbnail.jpg"
 
 export const projects = [
   {
@@ -24,7 +25,7 @@ export const projects = [
   {
     id: 2,
     name: "Collab-sphere",
-    thumbnail: "",
+    thumbnail: CollabSphereThumbnail,
     description: "Nền tảng quản lý dự án cộng tác hỗ trợ Project-Based Learning. Đa vai trò (Staff, Head), Kanban board, rich text editor và interactive whiteboard realtime.",
     tags: ["React 18", "Redux", "TailwindCSS", "Socket.IO", "Vite"],
     github: "https://github.com/TriNguyen5204/collab-sphere_FE",
